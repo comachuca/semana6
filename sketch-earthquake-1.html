@@ -67,7 +67,7 @@ function setup() {
 
 function draw() {
 	for(var x = 0; x < n; x++){
-		var magnitud = earthquakes.features[x].properties.mag;
+		var mag = earthquakes.features[x].properties.mag;
 		var max = height/2;
 		var min = height-(height/9);
 		var h = map(mag, 4.5, 9.5, min, max);
